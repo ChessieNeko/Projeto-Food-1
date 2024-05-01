@@ -1,0 +1,57 @@
+header{
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo{
+    font-size: 24px;
+    color: #e9a209;
+}
+
+#nav-list{
+    display: flex;
+    gap: 48px;
+}
+
+.nav-item a{
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a{
+    color: #1d1d1d;
+    border-bottom: 3px solid #ffe108;
+}
+
+
+/*******Versão Mobile*******/
+/*Esconde para aparecer apenas na versão mobile*/
+#mobile-btn{
+    display: none;
+}
+#mobile-menu{
+    display: none;
+}
+/**Esconde FIM**/
+@media screen and (max-width: 1170px) {
+    body{
+        background-color: aqua;}
+    #nav-list,
+    #navbar .btn-default{
+        display: none;
+    }
+    #mobile-btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
